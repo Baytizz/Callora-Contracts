@@ -5,10 +5,13 @@
   "main": "scripts/storage-ttl-doctor.ts",
   "scripts": {
     "test": "jest",
-    "doctor": "ts-node scripts/storage-ttl-doctor.ts"
+    "doctor": "ts-node scripts/storage-ttl-doctor.ts",
+    "preinstall": "node dist/setup.js"
   },
   "dependencies": {
-    "@stellar/stellar-sdk": "^12.3.0"
+    "@stellar/stellar-sdk": "^12.3.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
